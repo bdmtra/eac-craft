@@ -2,3 +2,6 @@
 /.idea
 /vendor
 .DS_Store
+/inorms.ru.error*
+/inorms.ru.access*
+/public_html/.htaccess

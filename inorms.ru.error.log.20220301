@@ -1,1 +1,0 @@
-[Tue Mar 01 08:49:17 2022] [error] [client 162.158.22.215:0] AH01276: Cannot serve directory /home/v/vnmedl8g/inorms.ru/public_html/: No matching DirectoryIndex (index.shtml,index.html,index.php,index.htm) found, and server-generated directory index forbidden by Options directive
