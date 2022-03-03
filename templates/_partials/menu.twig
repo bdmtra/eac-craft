@@ -2,6 +2,7 @@
 
 {% set nodes = craft.navigation.nodes()
     .handle('main')
+    .level(1)
     .all() %}
 <div class="header__menu menu">
     <ul class="menu__list">
@@ -16,7 +17,7 @@
     <li class="menu__item">
         {% if node.hasDescendants %}
             <a href="#" class="menu__link">
-                {{ item.title }}
+                {{ node.title }}
                 <span class="menu__arrow">
                     <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2.16663 4.875L6.49996 9.20833L10.8333 4.875" stroke="black" stroke-width="1.5"

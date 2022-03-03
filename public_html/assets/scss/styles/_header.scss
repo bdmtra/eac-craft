@@ -456,6 +456,7 @@
                     color: #fff;
                     // }
                     .menu__link {
+                        color: #fff;
                         &::after {
                             opacity: 1;
                             visibility: visible;
@@ -473,6 +474,9 @@
                         opacity: 1;
                         visibility: visible;
                         pointer-events: all;
+                        a {
+                            color: #fff;
+                        }
                     }
                 }
             }
@@ -494,7 +498,7 @@
     // .menu__link
     &__link {
         font-family: 'Roboto condensed';
-        color: inherit;
+        color: #000;
         font-size: 19px;
         line-height: 22 / 19 * 100%;
         display: flex;

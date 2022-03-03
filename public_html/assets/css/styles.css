@@ -945,6 +945,9 @@ textarea.input {
     background-color: transparent;
     color: #fff;
   }
+  .menu__item:hover .menu__link {
+    color: #fff;
+  }
   .menu__item:hover .menu__link::after {
     opacity: 1;
     visibility: visible;
@@ -957,6 +960,9 @@ textarea.input {
     opacity: 1;
     visibility: visible;
     pointer-events: all;
+  }
+  .menu__item:hover .menu__sub-list a {
+    color: #fff;
   }
 }
 @media (max-width: 1349.98px) {
@@ -974,7 +980,7 @@ textarea.input {
 }
 .menu__link {
   font-family: "Roboto condensed";
-  color: inherit;
+  color: #000;
   font-size: 19px;
   line-height: 115.7894736842%;
   display: flex;
