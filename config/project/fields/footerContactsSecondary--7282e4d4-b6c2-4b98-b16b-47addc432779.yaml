@@ -1,0 +1,19 @@
+columnSuffix: yfsgilob
+contentColumnType: text
+fieldGroup: 710dd5cc-4bd6-406b-97c4-cac686f67c67 # Global Settings 
+handle: footerContactsSecondary
+instructions: ''
+name: 'Footer contacts secondary'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '6'
+  multiline: '1'
+  placeholder: null
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

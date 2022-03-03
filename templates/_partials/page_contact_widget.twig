@@ -1,0 +1,18 @@
+<div class="widget-companies">
+    <div class="widget-companies__container">
+        <div class="widget-companies__body">
+            <ul class="widget-companies__list">
+                {% for icon in pageContactWidget.pageContactWidgetIcons.all() %}
+                    <a class="widget-companies__item"
+                        href="{{ pageContactWidget.pageContactWidgetTargetPage.one() ? pageContactWidget.pageContactWidgetTargetPage.one().url : null }}"><img
+                        src="{{ icon.image.one().url }}" alt="{{ icon.text }}">
+                    </a>
+                {% endfor %}
+            </ul>
+            <a class="widget-companies__button btn _fw"
+               href="{{ pageContactWidget.pageContactWidgetTargetPage.one() ? pageContactWidget.pageContactWidgetTargetPage.one().url : null }}">
+                {{ pageContactWidget.pageContactWidgetButtonText }}
+            </a>
+        </div>
+    </div>
+</div>

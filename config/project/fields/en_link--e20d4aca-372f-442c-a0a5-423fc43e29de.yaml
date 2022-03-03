@@ -1,0 +1,19 @@
+columnSuffix: ybwsycjz
+contentColumnType: text
+fieldGroup: b3b4ec5e-57ae-42b9-993b-aba987dd9cb2 # Language links
+handle: en_link
+instructions: ''
+name: 'EN Link'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

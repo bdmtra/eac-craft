@@ -1,0 +1,84 @@
+field: aa1d3ca8-92a3-4e61-8f56-266a9e083a99 # Clients items
+fieldLayouts:
+  67323897-98c3-4197-9af9-9207d2b577cd:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 534e4639-f758-4b93-a751-a982109d6428 # Heading
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a9fd9cf8-23af-4fee-85a3-a4a1edbdb865 # Image
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  534e4639-f758-4b93-a751-a982109d6428: # Heading
+    columnSuffix: thkodshr
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: ''
+    name: Heading
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a9fd9cf8-23af-4fee-85a3-a4a1edbdb865: # Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: ''
+    name: Image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:e63ebaa0-2a25-41c3-8a67-4f34be027d55' # Global
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:e63ebaa0-2a25-41c3-8a67-4f34be027d55' # Global
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:09e85ea6-be6e-4f00-8e26-ff14769b4d86' # Common
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: item
+name: Item
+sortOrder: 1

@@ -1,0 +1,34 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: e9ed4033-f150-4073-8ef1-cbcf99628593 # Contact
+handle: groupLogo
+instructions: ''
+name: 'Group logo'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds:
+    - svg
+  defaultUploadLocationSource: 'volume:e63ebaa0-2a25-41c3-8a67-4f34be027d55' # Global
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: '1'
+  selectionLabel: ''
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:e63ebaa0-2a25-41c3-8a67-4f34be027d55' # Global
+  singleUploadLocationSubpath: ''
+  source: null
+  sources:
+    - 'volume:09e85ea6-be6e-4f00-8e26-ff14769b4d86' # Common
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

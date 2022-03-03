@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: ru-RU
+name: 'Inorms RU'
+primary: true
+siteGroup: 7989857c-1610-407e-9bf2-4a99d3aa9a1c # Inorms RU
+sortOrder: 1

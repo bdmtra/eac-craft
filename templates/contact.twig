@@ -1,0 +1,92 @@
+{% extends "_layout" %}
+{% block content %}
+    <div class="page">
+        <div class="contact">
+            <div class="contact__container _container">
+                <div class="wir">
+                    <div class="wir__content">
+                        <h1 class="wir__title _title">{{ entry.titleAlternative ?: entry.title }}</h1>
+                        <div class="wir__text">{{ entry.pageContent }}</div>
+                    </div>
+                </div>
+                <section class="gmb">
+                    <div class="gmb__container">
+                        <div class="gmb__body">
+                            <div class="gmb__content content-gmb">
+                                <div class="content-gmb__body">
+                                    <div class="content-gmb__content">
+                                        <div class="content-gmb__header">
+                                            <div class="content-gmb__image">
+                                                {{ svg(entry.contactSmallLogo.one()) }}
+                                            </div>
+                                            <div class="content-gmb__title">{{ entry.contactCompanyName }}</div>
+                                        </div>
+                                        <div class="content-gmb__place">{{ entry.contactAddress|nl2br }}
+                                            <div class="content-gmb__place-icon">
+                                                <svg viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                            d="M9.00001 0.5C6.81277 0.50258 4.71584 1.3726 3.16923 2.91922C1.62261 4.46584 0.752589 6.56276 0.750009 8.75C0.747389 10.5374 1.33124 12.2763 2.41201 13.7C2.41201 13.7 2.63701 13.9963 2.67376 14.039L9.00001 21.5L15.3293 14.0353C15.3623 13.9955 15.588 13.7 15.588 13.7L15.5888 13.6978C16.669 12.2747 17.2526 10.5366 17.25 8.75C17.2474 6.56276 16.3774 4.46584 14.8308 2.91922C13.2842 1.3726 11.1873 0.50258 9.00001 0.5ZM9.00001 11.75C8.40667 11.75 7.82665 11.5741 7.3333 11.2444C6.83995 10.9148 6.45543 10.4462 6.22837 9.89805C6.00131 9.34987 5.9419 8.74667 6.05765 8.16473C6.17341 7.58279 6.45913 7.04824 6.87869 6.62868C7.29825 6.20912 7.8328 5.9234 8.41474 5.80764C8.99668 5.69189 9.59988 5.7513 10.1481 5.97836C10.6962 6.20542 11.1648 6.58994 11.4944 7.08329C11.8241 7.57664 12 8.15666 12 8.75C11.999 9.54535 11.6826 10.3078 11.1202 10.8702C10.5578 11.4326 9.79535 11.749 9.00001 11.75Z"
+                                                            fill="black" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="content-gmb__network">{{ entry.contactCommunication|nl2br }}</div>
+                                        <div class="content-gmb__angle angle angle_left-top"></div>
+                                        <div class="content-gmb__angle angle angle_left-bottom"></div>
+                                        <div class="content-gmb__angle angle angle_right-top"></div>
+                                        <div class="content-gmb__angle angle angle_right-bottom"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gmb__images">
+                                {{ svg(entry.contactBigLogo.one()) }}
+                                <div class="gmb__stump" style="transform: translate({{entry.contactStampHorizontalOffset}}%, {{entry.contactStampVerticalOffset}}%) rotate({{entry.contactStampRotation}}deg);">
+                                    {{ svg(entry.contactStamp.one()) }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                {% set branches = entry.branches.all() %}
+                {% if branches %}
+                <section class="branches">
+                    <div class="branches__container">
+                        <div class="branches__body">
+                            <div class="branches__header">
+                                {{ svg(entry.groupLogo.one()) }}
+                                <div class="branches__title">{{ entry.groupName }}</div>
+                            </div>
+                            <div>
+                                <div class="branches__columns">
+                                    {% for item in branches %}
+                                        <div class="branches__column">
+                                            <div class="branches__item">
+                                                <div class="branches__place">{{ item.text|nl2br }}</div>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="contact__form form">
+        <div class="form__container _container">
+            <div class="form__content">
+                <h2 class="form__title">{{ entry.contactFormTitle }}</h2>
+                {{ craft.freeform.form("contact-form", {
+                    class: "form__body",
+                    rowClass: "form__row",
+                    columnClass: "form__item",
+                    submitClass: "form__button",
+                    formattingTemplate: 'contact_form.twig'
+                }).render() }}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

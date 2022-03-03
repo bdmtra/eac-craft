@@ -1,0 +1,9 @@
+format: webp
+handle: product
+height: 220
+interlace: none
+mode: crop
+name: product
+position: center-center
+quality: 60
+width: 410

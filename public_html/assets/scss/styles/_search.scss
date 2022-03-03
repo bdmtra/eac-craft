@@ -1,0 +1,84 @@
+.search {
+    @include adaptiv-value("margin-top", 70, 30, 1);
+    @include adaptiv-value("margin-bottom", 98, 102, 1);
+    // .search__container
+    &__container {
+    }
+    // .search__title
+    &__title {
+        text-align: center;
+        @include adaptiv-value("margin-bottom", 80, 30, 1);
+    }
+    // .search__body
+    &__body {
+        max-width: 850px;
+        margin: 0px auto;
+    }
+    // .search__column
+    &__column {
+        @include adaptiv-value("margin-bottom", 60, 50, 1);
+    }
+    // .search__item
+    &__item {
+    }
+    // .search__item-title
+    &__item-title {
+        font-family: $familyCondensed;
+        @include adaptiv-value("font-size", 30, 20, 1);
+        line-height: 140%;
+        text-decoration: underline;
+        margin-bottom: 15px;
+        font-weight: 700;
+        a {
+            color: inherit;
+        }
+    }
+    // .search__text
+    &__text {
+        @include adaptiv-value("font-size", 18, 16, 1);
+        line-height: 140%;
+        margin-bottom: 20px;
+        @media (max-width: $md4+px) {
+            margin-bottom: 18px;
+        }
+    }
+    // .search__button-parent
+    &__button-parent {
+    }
+    // .search__button
+    &__button {
+        background-color: transparent;
+        border: 1px solid #000000;
+        color: inherit;
+        @include adaptiv-value("font-size", 18, 16, 1);
+        line-height: 140%;
+        min-width: 173px;
+        min-height: 39.8px;
+        @media (max-width: $md4+px) {
+            min-height: 39px;
+        }
+        @media (any-hover: hover) {
+            transition: all 0.3s ease 0s;
+            &:hover {
+                color: #fff;
+                background-color: #000;
+                &::after {
+                    transform: rotate(0deg);
+                    background: url(/assets/images/icons/arrow-white.svg) center no-repeat;
+                }
+            }
+        }
+        &::after {
+            content: "";
+            width: 15px;
+            height: 15px;
+            background: url(/assets/images/icons/arrow.svg) center no-repeat;
+            transform: rotate(-90deg);
+            margin-left: 5px;
+            transition: all 0.3s ease 0s;
+            @media (max-width: $md3+px) {
+                margin-left: 8px;
+            }
+        }
+    }
+}

@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="" lang="{{ craft.app.language }}" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-type">
+    <meta charset="utf-8">
+    <meta content="initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover" id="view" name="viewport"/>
+    {{ settings.headTags | raw }}
+    <link href="{{ alias('@web/assets/favicon.ico') }}" rel="icon" type="image/x-icon"/>
+
+    {% block head %}
+    {% endblock %}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        {{ inline(alias('@webroot/assets/css/styles.css')) | raw }}
+    </style>
+
+{#    {% set localHeadPartialPath = 'local/head'%}
+    {% if partial(localHeadPartialPath) %}
+        {% partial localHeadPartialPath %}
+    {% endif %}#}
+</head>
+
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header__container _container">
+            <nav class="header__body">
+                <a href="/" alt="{{ settings.companyFullName }}" class="header__logo"
+                   title="{{ settings.companyFullName }}">
+                    {{ svg(settings.headerLogo.one()) }}
+                </a>
+                <div class="header__burger">
+                    <a href="/" alt="{{ settings.companyFullName }}" class="header__logo-menu"
+                       title="{{ settings.companyFullName }}">
+                        {{ svg(settings.mobileMenuLogo.one()) }}
+                    </a>
+                    {% include '_partials/menu' %}
+                </div>
+                <div class="header__form-parent" style="display: none">
+                    <form action="{{ url('search') }}" method="get" class="header__form">
+                        <input name="q" type="text" autocomplete="off" placeholder="{{ 'Search'|t }}" class="input">
+                        <button></button>
+                    </form>
+                    <div class="header__form-icon">
+                        <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                    d="M16.8333 16.8333L13.095 13.0883L16.8333 16.8333ZM15.1667 8.08333C15.1667 9.96195 14.4204 11.7636 13.092 13.092C11.7636 14.4204 9.96195 15.1667 8.08333 15.1667C6.20472 15.1667 4.40304 14.4204 3.07466 13.092C1.74628 11.7636 1 9.96195 1 8.08333C1 6.20472 1.74628 4.40304 3.07466 3.07466C4.40304 1.74628 6.20472 1 8.08333 1C9.96195 1 11.7636 1.74628 13.092 3.07466C14.4204 4.40304 15.1667 6.20472 15.1667 8.08333V8.08333Z"
+                                    stroke="black" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="header__flags">
+                    <a href="" class="header__flag header__flag-current">
+                        {% set currentLang = settings.languages.one() %}
+                        {% if currentLang %}
+                            <img src="{{ currentLang.icon.one().url }}" alt="{{ currentLang.code }}">
+                        {% endif %}
+                    </a>
+                    <span class="header__flags-select">
+                        {% for lang in settings.languages.all()|slice(1) %}
+                            <a href="{{ lang.baseUrl ~ attribute(entry, lang.code ~ '_link') }}" class="header__flag">
+                                <img src="{{ lang.icon.one().url }}" alt="{{ lang.code }}">
+                            </a>
+                        {% endfor %}
+                    </span>
+                </div>
+                <button type="button" class="header__icon-menu icon-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    {% block content %}
+    {% endblock %}
+    <footer class="footer">
+        <div class="footer__container _container">
+            <div class="footer__body">
+                <div class="footer__header">
+                    <a class="footer__logo" href="/" alt="{{ settings.companyFullName }}"
+                       title="{{ settings.companyFullName }}">
+                        {{ svg(settings.footerLogo.one()) }}
+                    </a>
+                    <p>
+                        © {{ settings.companyShortName }}
+                    </p>
+                </div>
+                <div class="footer__item">
+                    {% nav node in craft.navigation.nodes('footerFirst').all() %}
+                        {{ node.link }}
+                    {% endnav %}
+                </div>
+                <div class="footer__item">
+                    {% nav node in craft.navigation.nodes('footerSecond').all() %}
+                        {{ node.link }}
+                    {% endnav %}
+                </div>
+                <div class="footer__item footer__item_show">
+                    {{ settings.footerContactsPrimary|nl2br }}
+                </div>
+                <div class="footer__item">
+                    {{ settings.footerContactsSecondary|nl2br }}
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script>
+    {{ inline(alias('@webroot/assets/js/scripts.js')) | raw }}
+</script>
+{#{% set localFooterPartialPath = 'local/footer'%}
+{% if partial(localFooterPartialPath) %}
+    {% partial localFooterPartialPath %}
+{% endif %}#}
+</body>
+</html>

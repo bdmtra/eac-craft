@@ -1,0 +1,91 @@
+fieldLayouts:
+  9bc04d65-16d7-44d4-8e08-f404477f7406:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 3aef1d5d-7857-4e49-b8ae-62b79ee5e29d # Company full name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 2a12a721-d5ee-4db8-b01b-9acd54f41ce4 # Company short name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c1a688ac-3319-4dfe-9ca0-7bb28baaa0e3 # Header logo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 158be6b6-2060-478d-b607-452bcf3c828d # Mobile menu logo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 20aebeec-6c4f-4e9b-9833-de8101ba2d96 # Languages
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 195c6e66-350d-40b1-bffd-d7b06add73f8 # Footer logo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c714099b-d87a-4b24-ba7f-1254eb452ce3 # Footer contacts primary
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7282e4d4-b6c2-4b98-b16b-47addc432779 # Footer contacts secondary
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7110607f-3936-4e11-9430-da6b9640cfb3 # Head tags
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Main
+        sortOrder: 1
+handle: settings
+name: Settings
+sortOrder: 1

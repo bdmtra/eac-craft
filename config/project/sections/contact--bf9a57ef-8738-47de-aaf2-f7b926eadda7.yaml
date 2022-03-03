@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: contact
+name: Contact
+propagationMethod: all
+siteSettings:
+  fe16f9ac-2784-4573-a588-52d30e51d3c0: # Inorms RU
+    enabledByDefault: true
+    hasUrls: true
+    template: contact.twig
+    uriFormat: '{slug}'
+type: single

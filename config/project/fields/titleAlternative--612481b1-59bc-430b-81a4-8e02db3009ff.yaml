@@ -1,0 +1,19 @@
+columnSuffix: hnzuwwel
+contentColumnType: text
+fieldGroup: 2877181c-2bb7-487b-9a3d-70e2e0484f92 # Page
+handle: titleAlternative
+instructions: ''
+name: 'Title alternative'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

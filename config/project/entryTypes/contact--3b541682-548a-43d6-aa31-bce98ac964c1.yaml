@@ -1,0 +1,221 @@
+fieldLayouts:
+  bdfdf10b-60e8-4d0c-bed2-fab332acee03:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 612481b1-59bc-430b-81a4-8e02db3009ff # Title alternative
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 72389dc6-a7e3-45e5-834c-9c6be31e4237 # Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d4743a87-66c4-4947-b9bb-d9ddb605c8c4 # Contact company name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a633fef1-6c28-491c-9139-07cf0c86ceec # Contact address
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e3e8f414-30f6-4263-8fa1-d3757fe178ca # Contact communication
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 32731ca9-5a9a-4190-a8cc-2e5bec08c1c3 # Contact big logo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 683d3e3f-5549-4ca5-b581-b3eb89ccbdb9 # Contact small logo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a125d571-980e-4eb6-b0ed-b6a771ad26f3 # Contact stamp
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 3e67be96-f9dc-4efc-94ef-8cbd3dee7197 # Contact stamp horizontal offset
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 18cca352-09b9-4afd-bd0d-16dcf76ab6bd # Contact stamp vertical offset
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 382c81ca-0957-43c0-a876-8e4d0f08cd26 # Contact stamp rotation
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 2625780e-b37c-4b95-87e1-b91a9581f8a4 # Contact form title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: abae5c56-b2d6-4c6e-8478-797d56cc5666 # Group name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 69add8d4-109f-491f-8e13-2d4841e6142e # Group logo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 107d32c1-1a8f-448b-8ecf-0ac4bf3e2f6b # Branches
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Branches
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 573235bf-7c73-439e-a0cc-93d06283f581 # DE link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e20d4aca-372f-442c-a0a5-423fc43e29de # EN Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e98f5be6-ebdd-4e91-a5df-4d7b2d177703 # RU link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Languages
+        sortOrder: 3
+      -
+        elements:
+          -
+            fieldUid: d54f9590-2516-48f7-9816-e2bc39a27125 # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: SEO
+        sortOrder: 4
+handle: contact
+hasTitleField: true
+name: Contact
+section: bf9a57ef-8738-47de-aaf2-f7b926eadda7 # Contact
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

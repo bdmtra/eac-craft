@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 710dd5cc-4bd6-406b-97c4-cac686f67c67 # Global Settings 
+handle: languages
+instructions: ''
+name: Languages
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_languages}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

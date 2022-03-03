@@ -1,0 +1,42 @@
+{% import _self as macros %}
+
+{% set nodes = craft.navigation.nodes()
+    .handle('main')
+    .all() %}
+<div class="header__menu menu">
+    <ul class="menu__list">
+        {% for node in nodes %}
+            {{ macros.navigationNodes(node) }}
+        {% endfor %}
+    </ul>
+</div>
+
+{% macro navigationNodes(node) %}
+    {% import _self as macros %}
+    <li class="menu__item">
+        {% if node.hasDescendants %}
+            <a href="#" class="menu__link">
+                {{ item.title }}
+                <span class="menu__arrow">
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.16663 4.875L6.49996 9.20833L10.8333 4.875" stroke="black" stroke-width="1.5"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span>
+            </a>
+            <ul class="menu__sub-list">
+                {% for subnode in node.children %}
+                    <li>
+                        <a href="{{ subnode.url }}" class="menu__sub-link">
+                            {{ subnode.title }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <a href="{{ node.url }}" class="menu__link">
+                {{ node.title }}
+            </a>
+        {% endif %}
+    </li>
+{% endmacro %}

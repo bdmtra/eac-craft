@@ -1,0 +1,71 @@
+.blog {
+    @include adaptiv-value("margin-top", 70, 30, 1);
+    @include adaptiv-value("margin-bottom", 130, 100, 1);
+    // .blog__container
+    &__container {
+    }
+    // .blog__title
+    &__title {
+        text-align: center;
+        @include adaptiv-value("margin-bottom", 60, 30, 1);
+    }
+    // .blog__columns
+    &__columns {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+        gap: 30px;
+        @media (max-width: $md4+px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    // .blog__column
+    &__column {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
+    }
+    // .blog__image
+    &__image {
+        width: 100%;
+        padding: 0px 0px 220/410 * 100% 0px;
+    }
+    // .blog__item
+    &__item {
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        @include adaptiv-value("padding-top", 20, 14, 1);
+        @include adaptiv-value("padding-left", 20, 14, 1);
+        @include adaptiv-value("padding-right", 20, 14, 1);
+        @include adaptiv-value("padding-bottom", 25, 24, 1);
+    }
+    // .blog__item-title
+    &__item-title {
+        font-family: $familyCondensed;
+        color: $mainColor;
+        @include adaptiv-value("font-size", 18, 15, 1);
+        line-height: 140%;
+        font-weight: 700;
+        @include adaptiv-value("margin-bottom", 15, 10, 1);
+    }
+    // .blog__item-text
+    &__item-text {
+        @include adaptiv-value("font-size", 15, 12, 1);
+        @include adaptiv-value("margin-bottom", 20, 15, 1);
+        line-height: 140%;
+        flex: 1 0 auto;
+    }
+    // .blog__item-button
+    &__item-button {
+        @include adaptiv-value("min-width", 100, 102, 1);
+        @include adaptiv-value("min-height", 34, 30, 1);
+        &::after {
+            content: "";
+            @include adaptiv-value("width", 15, 13, 1);
+            @include adaptiv-value("height", 15, 13, 1);
+            background: url(/assets/images/icons/arrow-white.svg) center no-repeat;
+            @include adaptiv-value("margin-left", 5, 10, 1);
+        }
+    }
+}

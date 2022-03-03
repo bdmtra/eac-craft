@@ -1,0 +1,102 @@
+.footer {
+    background-color: #2e2d2d;
+    // .footer__container
+    &__container {
+    }
+    // .footer__body
+    &__body {
+        padding: 50px 0px;
+        color: #fff;
+        display: flex;
+        @media (max-width: $md1+px) {
+            @media (min-width: 815px) {
+                justify-content: space-between;
+            }
+        }
+
+        @media (max-width: $md3+px) {
+            padding: 25px 0px;
+        }
+        a {
+            color: inherit;
+        }
+    }
+    // .footer__header
+    &__header {
+        display: inline-block;
+        @media (min-width: $md1+px) {
+            margin-right: 100px;
+        }
+        @media (max-width: 815px){
+            margin-right: 110px;
+        }
+        @media (max-width: 360px){
+            margin-right: 55px;
+        }
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 140%;
+            text-align: center;
+            @media (max-width: $md4+px) {
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+    // .footer__logo
+    &__logo {
+        display: inline-block;
+        margin-bottom: 10px;
+        @media (max-width: $md4+px) {
+            margin-bottom: 5px;
+        }
+        img {
+            max-width: 100%;
+            width: 113px;
+            height: 113px;
+            @media (max-width: $md4+px) {
+                width: 88px;
+                height: 88px;
+            }
+        }
+    }
+    // .footer__item
+    &__item {
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        line-height: 140%;
+        @media (min-width: $md1+px) {
+            &:not(:last-child) {
+                margin: 0px 100px 0px 0px;
+            }
+        }
+        @media (max-width: $md2+px) {
+            line-height: 160%;
+        }
+        @media (max-width: $md4+px) {
+            font-size: 14px;
+        }
+        @media (max-width: 815px) {
+            display: none;
+            &_show {
+                display: flex;
+            }
+        }
+        a {
+            text-decoration: underline;
+            margin-bottom: 5px;
+            @media (any-hover: hover) {
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        br {
+            display: block;
+            content: "";
+            margin-top: 5px;
+        }
+    }
+}

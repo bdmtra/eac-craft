@@ -1,0 +1,8 @@
+{% if entry.pageHeroImage.one() %}
+<div class="widget-image">
+    <div class="widget-image__image _ibg">
+        <img class="image" src="{{ entry.pageHeroImage.one().url }}"
+            alt="{{entry.title}}">
+    </div>
+</div>
+{% endif %}

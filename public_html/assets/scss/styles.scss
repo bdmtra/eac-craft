@@ -1,0 +1,163 @@
+// @use "sass:math";
+@import "styles/mixins";
+
+//<Шрифт по умолчанию>==========================================================================================
+$fontFamily: Roboto;
+$fontSize: 18;
+//</Шрифт по умолчанию>==========================================================================================
+
+//<ПЕРЕМЕННЫЕ>===========================================================================================================
+$minWidth: 320px;
+$maxWidth: 1600;
+$maxWidthContainer: 1290 + 40;
+$md1: $maxWidthContainer + 19.98;
+$md2: 1000.98;
+$md3: 767.98;
+$md4: 479.98;
+
+$third: 33.333%;
+
+$mainColor: #000;
+$darkGreyColor: #444343;
+
+$familyCondensed: 'Roboto Condensed';
+
+//</ПЕРЕМЕННЫЕ>===========================================================================================================
+// null
+@import "styles/null";
+body {
+    color: $mainColor;
+    &._lock {
+        overflow: hidden;
+    }
+}
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    &._loaded {
+    }
+}
+._container {
+    max-width: $maxWidthContainer + px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+@import "styles/forms";
+@import "styles/ui";
+// //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+
+// //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+@import "styles/_header";
+@import "styles/_home";
+@import "styles/_contact";
+@import "styles/_blog";
+@import "styles/_search";
+@import "styles/_richcontent";
+@import "styles/_business";
+@import "styles/_widget-contact";
+@import "styles/_footer";
+.page {
+    flex: 1 0 auto;
+    @media (min-width: $md4+px) {
+        padding-top: 114px;
+    }
+    @media (max-width: $md4+px) {
+        padding-top: 84px;
+    }
+}
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 10px;
+    margin-bottom: -10px;
+    margin-right: -25px;
+    li {
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        margin-right: 25px;
+        &:not(:last-child) {
+        }
+        &.active,
+        &:last-child {
+            // width: 24px;
+            flex: 0 0 24px;
+            height: 24px;
+            color: #fff;
+        }
+        &.active {
+            background-color: $darkGreyColor;
+        }
+        &:last-child {
+            background-color: #000;
+            font-size: 120%;
+        }
+        a {
+            color: inherit;
+        }
+    }
+    .disabled {
+        display: none;
+    }
+}
+
+.widget-image {
+    @include adaptiv-value("margin-bottom", 53, 40, 1);
+    // .widget-image__image
+    &__image {
+        padding: 0px 0px 35.295% 0px;
+        @media (max-width: $md2+px) {
+            margin: 0px -20px;
+        }
+        @media (max-width: $md4+px) {
+            padding: 0px 0px 300/320 * 100% 0px;
+        }
+    }
+}
+
+.error {
+    // .error__container
+    &__container {
+        @include adaptiv-value("padding-top", 70, 30, 1);
+    }
+    // .error__content
+    &__content {
+        text-align: center;
+        @include adaptiv-value("padding-bottom", 130, 109, 1);
+        font-family: $familyCondensed;
+        font-weight: 700;
+        @media (max-width: $md3+px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    // .error__title
+    &__title {
+        @include adaptiv-value("padding-bottom", 50, 30, 1);
+    }
+    // .error__text
+    &__text {
+        @include adaptiv-value("font-size", 35, 20, 1);
+        @media (max-width: $md3+px) {
+            margin-bottom: 30px;
+        }
+        line-height: 40px;
+    }
+}
+
+button {
+    &.close {
+        display: none;
+    }
+}

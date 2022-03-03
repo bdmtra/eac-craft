@@ -1,0 +1,19 @@
+columnSuffix: iquwndsz
+contentColumnType: text
+fieldGroup: 710dd5cc-4bd6-406b-97c4-cac686f67c67 # Global Settings 
+handle: companyShortName
+instructions: ''
+name: 'Company short name'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

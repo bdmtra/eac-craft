@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 82acd991-4cf7-40e9-a10d-45c8fb2c5b66 # Page Contact Widget
+handle: pageContactWidgetIcons
+instructions: ''
+name: 'Page contact widget icons'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_pagecontactwidgeticons}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

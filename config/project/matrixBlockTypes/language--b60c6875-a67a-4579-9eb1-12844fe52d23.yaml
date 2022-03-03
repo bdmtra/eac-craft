@@ -1,0 +1,110 @@
+field: 20aebeec-6c4f-4e9b-9833-de8101ba2d96 # Languages
+fieldLayouts:
+  01719ec1-e51f-44ed-a265-9cf033aa4af0:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 9a1a29b4-bfcb-473a-a0ba-3cc8b1147790 # Icon
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 540848a1-647f-46f9-9d6b-f5ebc69362c1 # code
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5d5dc631-c9e5-461d-8fa0-eac52c758f86 # Base url
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  5d5dc631-c9e5-461d-8fa0-eac52c758f86: # Base url
+    columnSuffix: nxcmlpjy
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: baseUrl
+    instructions: ''
+    name: 'Base url'
+    searchable: false
+    settings:
+      maxLength: '255'
+      placeholder: null
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  9a1a29b4-bfcb-473a-a0ba-3cc8b1147790: # Icon
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: icon
+    instructions: ''
+    name: Icon
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - svg
+      defaultUploadLocationSource: 'volume:e63ebaa0-2a25-41c3-8a67-4f34be027d55' # Global
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:e63ebaa0-2a25-41c3-8a67-4f34be027d55' # Global
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:e63ebaa0-2a25-41c3-8a67-4f34be027d55' # Global
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  540848a1-647f-46f9-9d6b-f5ebc69362c1: # code
+    columnSuffix: nphvbntq
+    contentColumnType: text
+    fieldGroup: null
+    handle: code
+    instructions: ''
+    name: code
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: language
+name: Language
+sortOrder: 1

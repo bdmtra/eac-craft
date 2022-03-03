@@ -1,0 +1,16 @@
+{% extends "_layout" %}
+{% block content %}
+    <div class="page">
+        <div class="richcontent">
+            <div class="richcontent__container _container">
+                <div class="richcontent__body">
+                    <h1 class="richcontent__title _title2">
+                        {{ entry.titleAlternative ?: entry.title }}
+                    </h1>
+                    {{ entry.pageContent|replace({'%hero_image%': include('_partials/page_hero_image', {entry:entry})})|raw }}
+                    {% include '_partials/page_contact_widget' %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{
+  "buttons": [
+    "html",
+    "formatting",
+    "bold",
+    "italic",
+    "unorderedlist",
+    "orderedlist",
+    "link",
+    "image",
+    "variable"
+  ],
+  "plugins": [
+    "fullscreen",
+    "variable",
+    "alignment"
+  ],
+  "linkNewTab": true,
+  "toolbarFixed": true,
+  "variables": ["hero_image"]
+}

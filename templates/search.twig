@@ -1,0 +1,53 @@
+{% extends "_layout" %}
+{% block content %}
+    <div class="page">
+        <section class="search">
+            <div class="search__container _container">
+                {% set query = craft.app.request.getQueryParam('q') %}
+                <h1 class="search__title _title">{{ 'Search results for'|t }} "{{ query }}"</h1>
+                <div class="search__body">
+                    {% paginate craft.entries.search('*' ~ query ~ '*').limit(5) as pageInfo, pageEntries %}
+                    {% if pageInfo.total  %}
+                        {% for entry in pageEntries %}
+                            <div class="search__column">
+                                <div class="search__item">
+                                    <h4 class="search__item-title">
+                                        <a href="{{ entry.url }}">{{ entry.title }}</a>
+                                    </h4>
+                                    <p class="search__text">
+                                        {{ entry.pageContent | excerptify(200) }}
+                                    </p>
+                                    <p class="search__button-parent">
+                                        <a class="search__button btn" href="{{ entry.url }}">{{ 'read more'|t }}</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                        {% endfor %}
+                    {% else %}
+                        <div class="error">
+                            <div class="_container">
+                                <div class="error__content">
+                                    <p class="error__text">{{ 'No results found'|t }}  :(</p>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                    <nav>
+                        {{ craft.pagination.render(pageInfo, 'ellipsis', {
+                            ulClass: 'pagination',
+                            liClass: '',
+                            aClass: '',
+                            activeClass: 'active',
+                            includeFirstLast: true,
+                            includePrevNext: true,
+                            prevText: '‹',
+                            nextText: '›',
+                            pageRange: 1
+                        }) }}
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}

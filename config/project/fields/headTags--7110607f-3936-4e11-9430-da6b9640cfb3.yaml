@@ -1,0 +1,19 @@
+columnSuffix: yoejlzub
+contentColumnType: text
+fieldGroup: 710dd5cc-4bd6-406b-97c4-cac686f67c67 # Global Settings 
+handle: headTags
+instructions: ''
+name: 'Head tags'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

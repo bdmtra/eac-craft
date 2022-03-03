@@ -1,0 +1,41 @@
+field: 107d32c1-1a8f-448b-8ecf-0ac4bf3e2f6b # Branches
+fieldLayouts:
+  be063e9d-3eb6-4a72-81ce-8d74bc15eca0:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 351cc174-b7df-426a-8540-612a7cc02589 # Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  351cc174-b7df-426a-8540-612a7cc02589: # Text
+    columnSuffix: idymhxaw
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '6'
+      multiline: '1'
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: branch
+name: Branch
+sortOrder: 1

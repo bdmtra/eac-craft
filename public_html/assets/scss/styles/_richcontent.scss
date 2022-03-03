@@ -1,0 +1,57 @@
+.richcontent {
+    @include adaptiv-value("padding-top", 77, 50, 1);
+    // a{
+    //     color: inherit;
+    // }
+    // .richcontent__container
+    &__container {
+    }
+    // .richcontent__body
+    &__body {
+        max-width: 850px;
+        margin: 0px auto;
+        @include adaptiv-value("font-size", 18, 16, 1);
+        line-height: 140%;
+        h2, h3, h4, h5, h6 {
+            font-family: 'Roboto condensed';
+            font-weight: 700;
+            line-height: 140%;
+            font-size: 35px;
+            @include adaptiv-value("margin-bottom", 16, 30, 1);
+            @media (max-width: $md2+px) {
+                font-size: 25px;
+            }
+            @media (max-width: $md4+px) {
+                font-size: 18px;
+            }
+        }
+        p {
+            @include adaptiv-value("margin-bottom", 30, 27, 1);
+        }
+        ul, ol {
+            margin-bottom: 20px;
+            li {
+                list-style: inherit;
+                margin-left: 30px;
+            }
+        }
+        ul p, ol p {
+            margin-bottom: 0;
+        }
+        a {
+            color: $darkGreyColor;
+            text-decoration: underline;
+        }
+        table {
+            margin: 20px 0;
+            tr {
+                margin: 10px 0;
+            }
+        }
+    }
+    // .richcontent__title
+    &__title {
+        text-align: center;
+        @include adaptiv-value("margin-bottom", 55, 29, 1);
+    }
+}

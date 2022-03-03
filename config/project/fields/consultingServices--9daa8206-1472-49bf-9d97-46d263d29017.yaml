@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: d0956545-0242-4f9c-8ede-a539c2cd6346 # Home
+handle: consultingServices
+instructions: ''
+name: 'Consulting services'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_consultingservices}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

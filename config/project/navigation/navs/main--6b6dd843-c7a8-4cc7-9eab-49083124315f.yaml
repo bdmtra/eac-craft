@@ -1,0 +1,28 @@
+handle: main
+instructions: ''
+maxNodes: ''
+name: Main
+permissions:
+  craft\elements\Asset:
+    enabled: ''
+    permissions: '*'
+  craft\elements\Category:
+    enabled: ''
+    permissions: '*'
+  craft\elements\Entry:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Tag:
+    enabled: ''
+    permissions: '*'
+  custom:
+    enabled: ''
+  verbb\navigation\nodetypes\PassiveType:
+    enabled: '1'
+propagateNodes: false
+siteSettings:
+  fe16f9ac-2784-4573-a588-52d30e51d3c0: null # Inorms RU
+sortOrder: 1
+structure:
+  maxLevels: null
+  uid: 9e8c210f-0c24-4f5e-be9d-0f72fb8351e5

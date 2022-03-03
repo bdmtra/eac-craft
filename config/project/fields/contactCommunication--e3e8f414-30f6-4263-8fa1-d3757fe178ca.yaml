@@ -1,0 +1,19 @@
+columnSuffix: ptnbbhnv
+contentColumnType: text
+fieldGroup: e9ed4033-f150-4073-8ef1-cbcf99628593 # Contact
+handle: contactCommunication
+instructions: ''
+name: 'Contact communication'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

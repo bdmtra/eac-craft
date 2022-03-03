@@ -1,0 +1,172 @@
+{% extends "_layout" %}
+{% block head %}
+    {% if entry.heroImage.one() %}
+        <link rel="preload" as="image" href="{{ entry.heroImage.one().url }}">
+    {% endif %}
+{% endblock %}
+{% block content %}
+    <div class="page">
+        <!--hero -->
+        <section class="hero">
+            <div class="hero__content">
+                <div class="hero__container _container">
+                    <div class="hero__body">
+                        <h1 class="hero__title">{{ entry.heroTitle|nl2br }}</h1>
+                        <div class="hero__subtitle">{{ entry.heroText|nl2br }}</div>
+                        <a class="hero__button btn" href="{{ entry.heroButtonPage.one() ? entry.heroButtonPage.one().url : null }}">{{ entry.heroButtonText}}</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__images">
+                <img src="{{ entry.heroImage.one() ? entry.heroImage.one().getUrl('placeholder') : null }}"
+                     data-src="{{ entry.heroImage.one() ? entry.heroImage.one().url : null }}" alt="{{ entry.heroTitle }}">
+                <div class="hero__stamp">
+                    <img src="{{entry.heroStamp.one() ? entry.heroStamp.one().url : null }}" alt="{{ entry.heroTitle }}">
+                    <style>
+                        .hero__stamp svg, .hero__stamp img {
+                            transform: translate({{entry.heroStampHorizontalOffset}}%, {{entry.heroStampVerticalOffset}}%) rotate({{ entry.heroStampRotation}}deg);
+                        }
+                        @media (max-width: 767.98px) {
+                            .hero__stamp svg, .hero__stamp img {
+                                transform: translate({{entry.heroStampHorizontalOffsetMobile}}%, {{entry.heroStampVerticalOffsetMobile}}%) rotate({{ entry.heroStampRotationMobile}}deg);
+                            }
+                        }
+                    </style>
+                </div>
+            </div>
+
+        </section>
+        <!--offer -->
+        {% if entry.offerTitle and entry.offerText%}
+        <div class="offer">
+            <div class="offer__container _container">
+                <div class="offer__content">
+                    <h2 class="offer__title">{{ entry.offerTitle|nl2br }}</h2>
+                    <div class="offer__text">{{ entry.offerText|nl2br }}</div>
+                    <div class="offer__angle angle angle_left-top"></div>
+                    <div class="offer__angle angle angle_left-bottom"></div>
+                    <div class="offer__angle angle angle_right-top"></div>
+                    <div class="offer__angle angle angle_right-bottom"></div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        <!--products -->
+        {% set products = entry.products.all() %}
+        {% if products %}
+            <section class="products">
+                <div class="products__container _container">
+                    <div class="products__body">
+                        <h2 class="products__title _title2">{{ entry.productsTitle|nl2br }}</h2>
+                        <div class="products__columns">
+                            {% for item in products %}
+                                <a class="products__column" href="{{ item.page.one() ? item.page.one().url : null }}">
+                                    <div class="products__image _ibg">
+                                        <img data-src="{{ item.image.one().getUrl('product') }}"
+                                             alt="{{ item.heading }}" title="{{ item.heading }}">
+                                    </div>
+                                    <div class="products__column-content">
+                                        <div class="products__column-title">{{ item.heading }} </div>
+                                        <div class="products__column-text">{{ item.text }}</div>
+                                    </div>
+                                </a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        {% endif %}
+
+        <!-- consulting -->
+        {% set consultingServices = entry.consultingServices.all() %}
+        {% if consultingServices %}
+            <section class="consult">
+                <div class="consult__container _container">
+                    <h2 class="consult__title _title2">{{ entry.consultingTitle|nl2br }}</h2>
+                    <div class="consult__body">
+                        <div class="consult__columns">
+                            {% for item in consultingServices %}
+                                <div class="consult__column {% if item.hideOnMobile %} mobile-hide {% endif %}">
+                                    <div href="{{ item.page.one().url }}" class="consult__item" >
+                                        <div class="consult__item-img">
+                                            {{ svg(item.image.one()) }}
+                                        </div>
+                                        <div class="consult__item-title">{{ item.heading }}</div>
+                                        <div class="consult__item-hide">
+                                            <div class="consult__item-text">{{ item.text|nl2br }}</div>
+                                        </div>
+                                        <a class="consult__more" href="{{ item.page.one().url }}">
+                                            {{ item.buttonText }}
+                                        </a>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        {% endif %}
+
+        <!-- documentation -->
+        {% set documentationItems = entry.documentationItems.all() %}
+        {% if documentationItems %}
+            <section class="doc">
+                <div class="doc__container _container">
+                    <div class="doc__content">
+                        <h2 class="doc__title _title2">{{ entry.documentationTitle|nl2br }}</h2>
+                        <div class="doc__columns">
+                            {% for item in documentationItems %}
+                                <div class="doc__column">
+                                    <div class="doc__item">
+                                        <div class="doc__item-title">{{ item.heading }}</div>
+                                        <div class="doc__item-text">{{ item.text|nl2br }}</div>
+                                        <a class="doc__item-button btn" href="{{ item.page.one().url }}">
+                                            {{ item.buttonText }}
+                                        </a>
+                                    </div>
+                                    <div class="doc__angle angle angle_left-top"></div>
+                                    <div class="doc__angle angle angle_left-bottom"></div>
+                                    <div class="doc__angle angle angle_right-top"></div>
+                                    <div class="doc__angle angle angle_right-bottom"></div>
+                                </div>
+                            {% endfor %}
+                            <div class="doc__stamp" style="transform: translate({{entry.documentationStampHorizontalOffset}}%,{{entry.documentationStampVerticalOffset}}%) rotate({{entry.documentationStampRotation}}deg);">
+                                {{ svg(entry.documentationStamp.one()) }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        {% endif %}
+
+        <!-- clients -->
+        {% set clientsItems = entry.clientsItems.all() %}
+        {% if clientsItems %}
+            <section class="clients">
+                <div class="clients__container _container">
+                    <h2 class="clients__title _title2">{{ entry.clientsTitle|nl2br }}</h2>
+                    <div class="clients__columns">
+                        {% for item in clientsItems %}
+                            <div class="clients__column">
+                                <div class="clients__image">
+                                    <img src="{{ item.image.one().getUrl('client')}}" alt="{{ item.heading }}"
+                                         title="{{ item.heading }}">
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+        {% endif %}
+
+        <!-- content -->
+        <section class="content">
+            <div class="content__container _container">
+                <h2 class="content__title _title2">{{ entry.contentTitle|nl2br }}</h2>
+                <div class="content__text">
+                    {{ entry.contentText|raw }}
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}

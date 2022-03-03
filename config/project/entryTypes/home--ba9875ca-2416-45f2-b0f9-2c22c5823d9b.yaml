@@ -1,0 +1,327 @@
+fieldLayouts:
+  50969c4e-5009-4566-9d16-800d66ab8229:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 31216713-1462-4465-88ad-423898219997 # Content title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 18a6eeea-d5ab-4542-9b12-ef7b38440859 # Content text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 3900f071-05cb-4522-9b29-389c2e8b8c39 # Hero title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c15c2381-d358-4a32-b3fd-87dcee1cfaa5 # Hero text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 3ec7beb4-6f50-491d-9d97-50167c0d056f # Hero image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c4eb6b18-e5b0-4a01-925b-0cabc839ab1a # Hero button text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: bf565cc0-9fdb-4d2f-9cb9-037629fd3a9f # Hero button page
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c3aaf572-e3f2-4033-84f6-d55571548da5 # Hero stamp
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6780f455-4d02-42a5-8ab8-8da23f2a1151 # Hero stamp horizontal offset
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e97bc9ae-6ecb-4225-819e-9f5829ca38d8 # Hero stamp vertical offset
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d29281fd-ed8f-42a6-a124-727bc2d6e448 # Hero stamp rotation
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7ec3b68e-e433-4843-b345-bebda32cf4bf # Hero stamp horizontal offset mobile
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: dbf7abb4-b3b8-405c-8217-1541103b9121 # Hero stamp vertical offset mobile
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: fac060fa-3209-4851-bcf4-22cba800ebfb # Hero stamp rotation mobile
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Hero
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: a8fe3603-6871-4043-9af4-4f0bbe279e21 # Offer title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: cd8d8607-7a5f-487c-b502-298b209dce5e # Offer text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Offer
+        sortOrder: 3
+      -
+        elements:
+          -
+            fieldUid: 508ad82a-80bc-4c5c-a8dd-eb9ed1191729 # Products title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a135c17c-2632-43d8-8aa7-6b324ae24d6f # Products
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Products
+        sortOrder: 4
+      -
+        elements:
+          -
+            fieldUid: 26aa654d-e3ca-4157-8fb6-e966063f90cf # Consulting title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9daa8206-1472-49bf-9d97-46d263d29017 # Consulting services
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Consulting
+        sortOrder: 5
+      -
+        elements:
+          -
+            fieldUid: c816b44d-1514-4f94-a3b5-638b3032e29b # Documentation title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7ecfdad6-f119-470f-af1b-59616284ff20 # Documentation items
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f8c40668-f8a3-4b78-ab09-793d67cb6517 # Documentation stamp
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 84fe5edd-e2e2-47af-aa87-8278a4b109de # Documentation stamp horizontal offset
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: dacd9024-9e85-4990-a1f3-9706b446e05a # Documentation stamp vertical offset
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f813d534-23ba-4156-88e2-8a13653fba63 # Documentation stamp rotation
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Documentation
+        sortOrder: 6
+      -
+        elements:
+          -
+            fieldUid: a97107ff-ab02-412e-b256-fed8517db78e # Clients title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: aa1d3ca8-92a3-4e61-8f56-266a9e083a99 # Clients items
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Clients
+        sortOrder: 7
+      -
+        elements:
+          -
+            fieldUid: d54f9590-2516-48f7-9816-e2bc39a27125 # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: SEO
+        sortOrder: 8
+handle: home
+hasTitleField: true
+name: Home
+section: d35c3283-2ce5-4d40-b165-28bcf068bb0e # Home
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

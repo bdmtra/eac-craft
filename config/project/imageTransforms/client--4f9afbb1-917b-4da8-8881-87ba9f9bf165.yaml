@@ -1,0 +1,9 @@
+format: webp
+handle: client
+height: 55
+interlace: none
+mode: crop
+name: Client
+position: center-center
+quality: 60
+width: 158

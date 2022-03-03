@@ -1,0 +1,41 @@
+<style>.freeform-row{display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between;margin:0 -15px}.freeform-row .freeform-column{-ms-flex:1 0;flex:1 0;padding:10px 0;margin:0 15px;box-sizing:border-box}.freeform-row .freeform-column>.freeform-row:first-child{margin-top:-10px}.freeform-row .freeform-column label{display:block}.freeform-row .freeform-column .input-group-one-line{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.freeform-row .freeform-column .input-group-one-line label{padding-right:10px}.freeform-row .freeform-column .freeform-input{width:100%;display:block;box-sizing:border-box}.freeform-row .freeform-column .freeform-input[type=checkbox],.freeform-row .freeform-column .freeform-input[type=radio]{width:auto;display:inline;margin-right:5px}.freeform-row .freeform-column .freeform-input.StripeElement{padding:4px 2px;border:1px solid #CCCCCC;height:30px}.freeform-row .freeform-column .freeform-input-only-label{font-weight:normal}.freeform-row .freeform-column .freeform-input-only-label>.freeform-input{display:inline-block;width:auto;margin-right:5px}.freeform-row .freeform-column .freeform-errors,.freeform-row .freeform-column .ff-errors{list-style:none;padding:0;margin:5px 0 0}.freeform-row .freeform-column .freeform-instructions{margin:0 0 5px;font-size:13px;color:#ABA7A7}.freeform-row .freeform-column.freeform-column-content-align-left{display:-ms-flexbox;display:flex;-ms-flex-pack:start;justify-content:flex-start}.freeform-row .freeform-column.freeform-column-content-align-left>button:not(:first-of-type){margin-left:5px}.freeform-row .freeform-column.freeform-column-content-align-center{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center}.freeform-row .freeform-column.freeform-column-content-align-center>button:not(:first-of-type){margin-left:5px}.freeform-row .freeform-column.freeform-column-content-align-right{display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}.freeform-row .freeform-column.freeform-column-content-align-right>button:not(:first-of-type){margin-left:5px}.freeform-row .freeform-column.freeform-column-content-align-spread{display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}.freeform-row .freeform-column.freeform-column-content-align-spread>button:not(:first-of-type){margin-left:5px}.ff-form-errors, .ff-form-success{font-size: 20px;font-weight: 700;margin: 1em 0px 1em 0px;}.ff-form-errors>p{margin:0}.freeform-form-has-errors{color:#721c24}</style>
+
+{{ form.renderTag }}
+
+{% for row in form %}
+    <div class="freeform-row {{ form.customAttributes.rowClass }}">
+        {% for field in row %}
+            {% set columnClass = "freeform-column " ~ form.customAttributes.columnClass %}
+            {% if field.type == "submit" %}
+                {% set columnClass = columnClass ~ " freeform-column-content-align-" ~ field.position %}
+            {% endif %}
+            {% switch field.type %}
+                {% case 'checkbox' %}
+                <div class="freeform-column form__item">
+                    <div class="form__agrees">
+                        <div class="form__agree">
+                            <label for="form-input-agree" class="checkbox freeform-label freeform-input-only-label freeform-required">
+                                <input name="agree" type="hidden">
+                                <input type="checkbox" id="form-input-agree" value="1" data-required="" name="agree" class="checkbox__input freeform-input">
+                                <span class="checkbox__text">
+                                    <span>{{ field.label }}</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                {% default %}
+                <div class="{{ columnClass }}"{{ field.rulesHtmlData }}>
+                    {{ field.render({
+                        class: field.type not in ["submit", "signature"] ? "freeform-input" : "",
+                        labelClass: "freeform-label" ~ (field.inputOnly ? " freeform-input-only-label" : "") ~ (field.required ? " freeform-required" : ""),
+                        errorClass: "freeform-errors",
+                        instructionsClass: "freeform-instructions",
+                    }) }}
+                </div>
+            {% endswitch %}
+        {% endfor %}
+    </div>
+{% endfor %}
+
+{{ form.renderClosingTag }}

@@ -1,0 +1,28 @@
+handle: footerSecond
+instructions: ''
+maxNodes: ''
+name: 'Footer Second'
+permissions:
+  craft\elements\Asset:
+    enabled: ''
+    permissions: '*'
+  craft\elements\Category:
+    enabled: ''
+    permissions: '*'
+  craft\elements\Entry:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Tag:
+    enabled: ''
+    permissions: '*'
+  custom:
+    enabled: ''
+  verbb\navigation\nodetypes\PassiveType:
+    enabled: ''
+propagateNodes: false
+siteSettings:
+  fe16f9ac-2784-4573-a588-52d30e51d3c0: null # Inorms RU
+sortOrder: 3
+structure:
+  maxLevels: null
+  uid: 30166600-95c0-4a15-b68e-f848107c570e

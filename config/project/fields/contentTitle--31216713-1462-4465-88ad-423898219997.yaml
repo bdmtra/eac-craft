@@ -1,0 +1,19 @@
+columnSuffix: rgudxsjs
+contentColumnType: text
+fieldGroup: d0956545-0242-4f9c-8ede-a539c2cd6346 # Home
+handle: contentTitle
+instructions: ''
+name: 'Content title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

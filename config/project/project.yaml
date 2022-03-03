@@ -1,0 +1,338 @@
+dateModified: 1646216455
+email:
+  fromEmail: borovkov.dmitry@gmail.com
+  fromName: 'Inorms RU'
+  replyToEmail: null
+  template: null
+  transportSettings:
+    encryptionMethod: none
+    host: smtp-relay.sendinblue.com
+    password: yDMVIvNUQgCZsTGE
+    port: '587'
+    timeout: '10'
+    useAuthentication: '1'
+    username: borovkov.dmitry@gmail.com
+  transportType: craft\mail\transportadapters\Smtp
+meta:
+  __names__:
+    0e91a37e-fd03-4d56-8c2a-b7cb5f496b22: Heading # Heading
+    1f08f302-de4b-46fd-9d0b-0d11fe6623ab: 'Page Contact Widget' # Page Contact Widget
+    2a12a721-d5ee-4db8-b01b-9acd54f41ce4: 'Company short name' # Company short name
+    3aef1d5d-7857-4e49-b8ae-62b79ee5e29d: 'Company full name' # Company full name
+    3b541682-548a-43d6-aa31-bce98ac964c1: Contact # Contact
+    3e67be96-f9dc-4efc-94ef-8cbd3dee7197: 'Contact stamp horizontal offset' # Contact stamp horizontal offset
+    3ec6f678-2177-42cd-9c87-085174d349c0: product # product
+    3ec7beb4-6f50-491d-9d97-50167c0d056f: 'Hero image' # Hero image
+    4b5514ac-3262-499e-a2fa-745c7f34efe6: Text # Text
+    4c1066ca-6f21-421c-90e0-ac5b8c9e675c: Product # Product
+    4f9afbb1-917b-4da8-8881-87ba9f9bf165: Client # Client
+    4f8401d5-3a0d-4925-8f62-ba45f22d3997: Settings # Settings
+    5d5dc631-c9e5-461d-8fa0-eac52c758f86: 'Base url' # Base url
+    5f2d3450-4b87-405d-82b4-09f1ce39f79f: Search # Search
+    6b6dd843-c7a8-4cc7-9eab-49083124315f: Main # Main
+    6c0c4ed7-aea5-48bc-ba81-664c9edb9a20: Search # Search
+    6c72f70e-d98a-45fa-a555-b2560bad9ff2: Text # Text
+    7bd3e033-1a81-496a-8f4e-65b6ecb8c569: Default # Default
+    7ec3b68e-e433-4843-b345-bebda32cf4bf: 'Hero stamp horizontal offset mobile' # Hero stamp horizontal offset mobile
+    7ecfdad6-f119-470f-af1b-59616284ff20: 'Documentation items' # Documentation items
+    8a816ed3-d210-4503-b257-bc1aef8946ac: 'Button text' # Button text
+    8b55667f-e342-49ce-9193-039e14f7e8bf: 'Button text' # Button text
+    9a1a29b4-bfcb-473a-a0ba-3cc8b1147790: Icon # Icon
+    9daa8206-1472-49bf-9d97-46d263d29017: 'Consulting services' # Consulting services
+    09e85ea6-be6e-4f00-8e26-ff14769b4d86: Common # Common
+    9ecb2a40-58d5-404d-a3ce-608131f30383: Image # Image
+    18a6eeea-d5ab-4542-9b12-ef7b38440859: 'Content text' # Content text
+    18cca352-09b9-4afd-bd0d-16dcf76ab6bd: 'Contact stamp vertical offset' # Contact stamp vertical offset
+    20aebeec-6c4f-4e9b-9833-de8101ba2d96: Languages # Languages
+    26aa654d-e3ca-4157-8fb6-e966063f90cf: 'Consulting title' # Consulting title
+    45c341e1-4a75-4067-9ccd-1157b25cf8e2: 'Page contact widget icons' # Page contact widget icons
+    49fc83e6-63cd-4815-978f-b3020a909def: Branch # Branch
+    69add8d4-109f-491f-8e13-2d4841e6142e: 'Group logo' # Group logo
+    82acd991-4cf7-40e9-a10d-45c8fb2c5b66: 'Page Contact Widget' # Page Contact Widget
+    084a2a4b-89ab-4b71-a82b-7b097b57b5ac: 'Page contact widget target page' # Page contact widget target page
+    84fe5edd-e2e2-47af-aa87-8278a4b109de: 'Documentation stamp horizontal offset' # Documentation stamp horizontal offset
+    107d32c1-1a8f-448b-8ecf-0ac4bf3e2f6b: Branches # Branches
+    120bfd86-5020-4ef2-bceb-957041d62f6d: Text # Text
+    158be6b6-2060-478d-b607-452bcf3c828d: 'Mobile menu logo' # Mobile menu logo
+    195c6e66-350d-40b1-bffd-d7b06add73f8: 'Footer logo' # Footer logo
+    351cc174-b7df-426a-8540-612a7cc02589: Text # Text
+    382c81ca-0957-43c0-a876-8e4d0f08cd26: 'Contact stamp rotation' # Contact stamp rotation
+    508ad82a-80bc-4c5c-a8dd-eb9ed1191729: 'Products title' # Products title
+    534e4639-f758-4b93-a751-a982109d6428: Heading # Heading
+    683d3e3f-5549-4ca5-b581-b3eb89ccbdb9: 'Contact small logo' # Contact small logo
+    710dd5cc-4bd6-406b-97c4-cac686f67c67: 'Global Settings ' # Global Settings 
+    1357e4bd-28ae-4ea2-b5a5-659fc5ef12e5: 'Footer Second' # Footer Second
+    1558e1f6-9dae-452c-a1d8-35c63c43c602: Service # Service
+    2029d554-f5db-468d-8a88-1b7bfb625514: Heading # Heading
+    3900f071-05cb-4522-9b29-389c2e8b8c39: 'Hero title' # Hero title
+    6780f455-4d02-42a5-8ab8-8da23f2a1151: 'Hero stamp horizontal offset' # Hero stamp horizontal offset
+    7282e4d4-b6c2-4b98-b16b-47addc432779: 'Footer contacts secondary' # Footer contacts secondary
+    32731ca9-5a9a-4190-a8cc-2e5bec08c1c3: 'Contact big logo' # Contact big logo
+    72389dc6-a7e3-45e5-834c-9c6be31e4237: Content # Content
+    92275a26-3e80-4966-b273-6774857aeb3f: Item # Item
+    540848a1-647f-46f9-9d6b-f5ebc69362c1: code # code
+    573235bf-7c73-439e-a0cc-93d06283f581: 'DE link' # DE link
+    612481b1-59bc-430b-81a4-8e02db3009ff: 'Title alternative' # Title alternative
+    2625780e-b37c-4b95-87e1-b91a9581f8a4: 'Contact form title' # Contact form title
+    2877181c-2bb7-487b-9a3d-70e2e0484f92: Page # Page
+    7110607f-3936-4e11-9430-da6b9640cfb3: 'Head tags' # Head tags
+    7989857c-1610-407e-9bf2-4a99d3aa9a1c: 'Inorms RU' # Inorms RU
+    31216713-1462-4465-88ad-423898219997: 'Content title' # Content title
+    75829731-741b-4856-87d3-36a7778d1538: Heading # Heading
+    95830086-c604-4190-98ee-51ae0f3c80d7: Item # Item
+    a8fe3603-6871-4043-9af4-4f0bbe279e21: 'Offer title' # Offer title
+    a9fd9cf8-23af-4fee-85a3-a4a1edbdb865: Image # Image
+    a125d571-980e-4eb6-b0ed-b6a771ad26f3: 'Contact stamp' # Contact stamp
+    a135c17c-2632-43d8-8aa7-6b324ae24d6f: Products # Products
+    a633fef1-6c28-491c-9139-07cf0c86ceec: 'Contact address' # Contact address
+    a97107ff-ab02-412e-b256-fed8517db78e: 'Clients title' # Clients title
+    aa1d3ca8-92a3-4e61-8f56-266a9e083a99: 'Clients items' # Clients items
+    aa208851-b88a-468d-a94c-c6473cdaf402: Image # Image
+    abae5c56-b2d6-4c6e-8478-797d56cc5666: 'Group name' # Group name
+    aeecf68b-9fdf-4206-8a70-ec2e439feedf: Text # Text
+    b3b4ec5e-57ae-42b9-993b-aba987dd9cb2: 'Language links' # Language links
+    b60c6875-a67a-4579-9eb1-12844fe52d23: Language # Language
+    b29454fe-c06c-45e5-b9fa-853741194abd: 'Page contact widget button text' # Page contact widget button text
+    ba7d462f-f790-4ef0-9ebb-1ec27300ee80: Page # Page
+    ba9875ca-2416-45f2-b0f9-2c22c5823d9b: Home # Home
+    bf9a57ef-8738-47de-aaf2-f7b926eadda7: Contact # Contact
+    bf565cc0-9fdb-4d2f-9cb9-037629fd3a9f: 'Hero button page' # Hero button page
+    c1a688ac-3319-4dfe-9ca0-7bb28baaa0e3: 'Header logo' # Header logo
+    c3aaf572-e3f2-4033-84f6-d55571548da5: 'Hero stamp' # Hero stamp
+    c4eb6b18-e5b0-4a01-925b-0cabc839ab1a: 'Hero button text' # Hero button text
+    c15c2381-d358-4a32-b3fd-87dcee1cfaa5: 'Hero text' # Hero text
+    c816b44d-1514-4f94-a3b5-638b3032e29b: 'Documentation title' # Documentation title
+    c714099b-d87a-4b24-ba7f-1254eb452ce3: 'Footer contacts primary' # Footer contacts primary
+    cc1a6f2d-b95e-4272-81a2-50e6a2e643d7: Image # Image
+    cc7e546f-6eb5-411a-be3f-139e2c89542d: 'Hero image' # Hero image
+    cd8d8607-7a5f-487c-b502-298b209dce5e: 'Offer text' # Offer text
+    d0956545-0242-4f9c-8ede-a539c2cd6346: Home # Home
+    d2ecf075-8929-4c32-904b-5be80a1ad7a7: Page # Page
+    d35c3283-2ce5-4d40-b165-28bcf068bb0e: Home # Home
+    d54f9590-2516-48f7-9816-e2bc39a27125: SEO # SEO
+    d855fc93-da8d-4e28-a3a6-470738ca953c: 'Footer First' # Footer First
+    d4743a87-66c4-4947-b9bb-d9ddb605c8c4: 'Contact company name' # Contact company name
+    d29281fd-ed8f-42a6-a124-727bc2d6e448: 'Hero stamp rotation' # Hero stamp rotation
+    d368495f-be1b-46dd-99d6-0b5b7c25573c: Icon # Icon
+    dacd9024-9e85-4990-a1f3-9706b446e05a: 'Documentation stamp vertical offset' # Documentation stamp vertical offset
+    dbf7abb4-b3b8-405c-8217-1541103b9121: 'Hero stamp vertical offset mobile' # Hero stamp vertical offset mobile
+    e3e8f414-30f6-4263-8fa1-d3757fe178ca: 'Contact communication' # Contact communication
+    e8d4a6c2-eafd-49d7-ba61-fdbb345e53d6: 'Hide on mobile' # Hide on mobile
+    e9ed4033-f150-4073-8ef1-cbcf99628593: Contact # Contact
+    e20d4aca-372f-442c-a0a5-423fc43e29de: 'EN Link' # EN Link
+    e63ebaa0-2a25-41c3-8a67-4f34be027d55: Global # Global
+    e97bc9ae-6ecb-4225-819e-9f5829ca38d8: 'Hero stamp vertical offset' # Hero stamp vertical offset
+    e98f5be6-ebdd-4e91-a5df-4d7b2d177703: 'RU link' # RU link
+    efcf1b55-2350-4cf5-b00d-1d279774618a: placeholder # placeholder
+    f8c40668-f8a3-4b78-ab09-793d67cb6517: 'Documentation stamp' # Documentation stamp
+    f32c6ee4-e45f-4fc2-93cd-46e42d807908: Page # Page
+    f46b3374-3515-4f4c-b25a-5b347efe09b2: Common # Common
+    f368ef18-bad7-43ac-b7be-1637624a6867: Page # Page
+    f813d534-23ba-4156-88e2-8a13653fba63: 'Documentation stamp rotation' # Documentation stamp rotation
+    fac060fa-3209-4851-bcf4-22cba800ebfb: 'Hero stamp rotation mobile' # Hero stamp rotation mobile
+    fe16f9ac-2784-4573-a588-52d30e51d3c0: 'Inorms RU' # Inorms RU
+plugins:
+  blitz:
+    edition: standard
+    enabled: true
+    licenseKey: N850RLL45JLWAWN2K5FYFOLT
+    schemaVersion: 3.10.0
+    settings:
+      apiKey: ''
+      cacheControlHeader: 'public, s-maxage=31536000, max-age=0'
+      cacheDuration: null
+      cacheElementQueries: true
+      cacheElements: true
+      cachePurgerType: putyourlightson\blitz\drivers\purgers\DummyPurger
+      cacheStorageSettings:
+        __assoc__:
+          -
+            - folderPath
+            - '@webroot/cache/blitz'
+          -
+            - createGzipFiles
+            - '1'
+          -
+            - createBrotliFiles
+            - ''
+      cacheStorageType: putyourlightson\blitz\drivers\storage\FileStorage
+      cacheWarmerSettings:
+        __assoc__:
+          -
+            - concurrency
+            - '3'
+      cacheWarmerType: putyourlightson\blitz\drivers\warmers\GuzzleWarmer
+      cachingEnabled: ''
+      clearCacheAutomatically: '1'
+      customSiteUris: ''
+      debug: false
+      deployerType: putyourlightson\blitz\drivers\deployers\DummyDeployer
+      driverJobPriority: 100
+      excludedQueryStringParams:
+        - gclid
+        - fbclid
+      excludedUriPatterns:
+        -
+          __assoc__:
+            -
+              - uriPattern
+              - /search
+      includedQueryStringParams:
+        - '.*'
+      includedUriPatterns:
+        -
+          __assoc__:
+            -
+              - uriPattern
+              - '.*'
+      injectScriptEvent: DOMContentLoaded
+      integrations:
+        - putyourlightson\blitz\drivers\integrations\FeedMeIntegration
+        - putyourlightson\blitz\drivers\integrations\SeomaticIntegration
+      maxRetryAttempts: 10
+      mutexTimeout: 1
+      outputComments: true
+      queryStringCaching: '0'
+      queueJobTtr: 300
+      refreshCacheAutomaticallyForGlobals: true
+      refreshCacheJobPriority: 10
+      refreshCacheWhenElementSavedNotLive: false
+      refreshCacheWhenElementSavedUnchanged: false
+      sendPoweredByHeader: true
+      warmCacheAutomatically: '1'
+      warmPagesWithQueryStringParams: true
+  cp-css:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+    settings:
+      additionalCss: '#alerts{display:none}'
+      cacheBusting: true
+      cssFile: ''
+  craft-excerptify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  freeform:
+    edition: lite
+    enabled: true
+    licenseKey: N2LB4TS0JXJ3Q5K1GYZWDUD7
+    schemaVersion: 3.6.2
+    settings:
+      ajaxByDefault: true
+      alertNotificationRecipients: ''
+      autoScroll: true
+      autoScrollToErrors: true
+      badgeType: all
+      blockedEmails: null
+      blockedEmailsError: 'Invalid Email Address'
+      blockedIpAddresses: null
+      blockedKeywords: null
+      blockedKeywordsError: 'Invalid Entry Data'
+      clientDigestFrequency: 1
+      clientDigestRecipients: ''
+      customErrorMessage: null
+      customHoneypotName: null
+      defaultTemplates: true
+      defaultView: dashboard
+      digestFrequency: 1
+      digestOnlyOnProduction: false
+      digestRecipients: ''
+      displayFeed: true
+      emailTemplateDirectory: null
+      emailTemplateStorage: db
+      exportLabels: false
+      fieldDisplayOrder: name
+      fillWithGet: false
+      footerScripts: false
+      formFieldShowOnlyAllowedForms: false
+      formSubmitDisable: true
+      formSubmitExpiration: null
+      formTemplateDirectory: freeform_formatting/
+      formattingTemplate: flexbox.html
+      freeformHoneypot: true
+      freeformHoneypotEnhancement: false
+      hideBannerDemo: false
+      hideBannerOldFreeform: false
+      minimumSubmitTime: null
+      pluginName: ''
+      purgableSpamAgeInDays: null
+      purgableSubmissionAgeInDays: null
+      purgableUnfinalizedAssetAgeInMinutes: 180
+      recaptchaBehaviour: display_error
+      recaptchaEnabled: false
+      recaptchaErrorMessage: 'Please verify that you are not a robot.'
+      recaptchaKey: null
+      recaptchaLazyLoad: false
+      recaptchaMinScore: 0.5
+      recaptchaSecret: null
+      recaptchaSize: normal
+      recaptchaTheme: light
+      recaptchaType: v2_checkbox
+      rememberPageSubmitOrder: true
+      removeNewlines: false
+      renderFormHtmlInCpViews: true
+      salesforce_client_id: null
+      salesforce_client_secret: null
+      salesforce_password: null
+      salesforce_username: null
+      saveFormSessionLimit: 10
+      saveFormTtl: 30
+      scriptInsertLocation: footer
+      scriptInsertType: inline
+      sessionContext: payload
+      sessionContextCount: 100
+      sessionContextSecret: ''
+      sessionContextTimeToLiveMinutes: 180
+      sessionEntryMaxCount: 50
+      sessionEntryTTL: 10800
+      showErrorsForBlockedEmails: false
+      showErrorsForBlockedKeywords: false
+      showTutorial: false
+      spamFolderEnabled: true
+      spamProtectionBehaviour: simulate_success
+      submissionThrottlingCount: null
+      submissionThrottlingTimeFrame: null
+      twigInHtml: true
+      twigInHtmlIsolatedMode: true
+      updateSearchIndexes: true
+  inline:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  navigation:
+    edition: standard
+    enabled: true
+    licenseKey: M5QRI4W9XSR19PQ3KHVTG6OW
+    schemaVersion: 1.0.21
+  pagination:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  retour:
+    edition: standard
+    enabled: true
+    licenseKey: PL8SAUEHMDZPWPR67V8CCPR9
+    schemaVersion: 3.0.10
+  seomatic:
+    edition: standard
+    enabled: true
+    licenseKey: VA00PYEPQ08WF1SE5WW28V5V
+    schemaVersion: 3.0.11
+system:
+  edition: solo
+  live: true
+  name: Inorms
+  retryDuration: null
+  schemaVersion: 3.7.33
+  timeZone: Europe/Moscow
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
